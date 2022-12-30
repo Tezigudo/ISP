@@ -1,5 +1,0 @@
-*** Variables ***
-${HOST}         wepays.herokuapp
-${SITE_URL}     https://wepays.herokuapp.com
-  
-${EMAIL}        demo@wepay.com

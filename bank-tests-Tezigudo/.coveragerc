@@ -1,8 +1,0 @@
-[run]
-# measure branch coverage
-branch = True
-# omit uninteresting files
-omit =
-    __init__.py
-    bank_demo.py
-    test_*.py
