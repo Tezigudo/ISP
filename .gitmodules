@@ -1,0 +1,12 @@
+[submodule "Assignment/demo-pyci"]
+	path = Assignment/demo-pyci
+	url = https://github.com/Tezigudo/demo-pyci.git
+[submodule "Assignment/git-commands"]
+	path = Assignment/git-commands
+	url = https://github.com/Tezigudo/git-commands.git
+[submodule "Assignment/ku-cafe"]
+	path = Assignment/ku-cafe
+	url = https://github.com/Tezigudo/ku-cafe.git
+[submodule "Assignment/ku-polls"]
+	path = Assignment/ku-polls
+	url = https://github.com/Tezigudo/ku-polls.git
