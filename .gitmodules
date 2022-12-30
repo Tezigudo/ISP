@@ -10,3 +10,6 @@
 [submodule "Assignment/ku-polls"]
 	path = Assignment/ku-polls
 	url = https://github.com/Tezigudo/ku-polls.git
+[submodule "Project/WePay"]
+	path = Project/WePay
+	url = https://github.com/WePays/WePay.git
