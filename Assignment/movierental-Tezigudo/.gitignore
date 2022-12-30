@@ -1,0 +1,25 @@
+# java stuff
+bin/
+build/
+*.class
+# python stuff
+__pycache__/
+*.py[cod]
+# Virtualenv is recreated as needed.
+env/
+virtualenv/
+venv/
+# code coverage
+.coverage
+htmlcov/
+coverage
+# IDE files
+.idea/
+*.iml
+.classpath
+.metadata
+.project
+.pydevproject
+.settings
+.vscode/
+.DSStore

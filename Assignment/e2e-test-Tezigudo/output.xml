@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.9.13 on darwin)" generated="20221217 12:20:53.447" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="/Users/god/Desktop/MyFolder/Programming/Y2S1/ISP/Assignment/e2e-test-Tezigudo/test.robot">
+<test id="s1-t1" name="Login test" line="12">
+<kw name="Open WePay">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221217 12:20:53.775" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8000'.</msg>
+<status status="PASS" starttime="20221217 12:20:53.774" endtime="20221217 12:21:18.596"/>
+</kw>
+<status status="PASS" starttime="20221217 12:20:53.773" endtime="20221217 12:21:18.597"/>
+</kw>
+<kw name="Login">
+<kw name="Insert user and password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=login</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221217 12:21:18.598" level="INFO">Typing text 'demo' into text field 'name=login'.</msg>
+<status status="PASS" starttime="20221217 12:21:18.598" endtime="20221217 12:21:19.154"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221217 12:21:19.155" level="INFO">Typing text 'Demo1234!' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20221217 12:21:19.155" endtime="20221217 12:21:19.284"/>
+</kw>
+<status status="PASS" starttime="20221217 12:21:18.597" endtime="20221217 12:21:19.285"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=id_submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221217 12:21:19.285" level="INFO">Clicking button 'id=id_submit'.</msg>
+<status status="PASS" starttime="20221217 12:21:19.285" endtime="20221217 12:21:30.583"/>
+</kw>
+<status status="PASS" starttime="20221217 12:21:18.597" endtime="20221217 12:21:30.583"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>//div[@class='sweet-alert']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<msg timestamp="20221217 12:21:41.237" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221217 12:21:41.237" level="FAIL">Text '//div[@class='sweet-alert']' did not appear in 10 seconds.</msg>
+<status status="FAIL" starttime="20221217 12:21:30.583" endtime="20221217 12:21:41.238"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>id=plus-btn</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221217 12:21:41.239" endtime="20221217 12:21:41.239"/>
+</kw>
+<kw name="Click Plus Button">
+<status status="NOT RUN" starttime="20221217 12:21:41.239" endtime="20221217 12:21:41.239"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>name=create_title</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221217 12:21:41.239" endtime="20221217 12:21:41.239"/>
+</kw>
+<kw name="Insert Demo Bill and Create it">
+<status status="NOT RUN" starttime="20221217 12:21:41.239" endtime="20221217 12:21:41.239"/>
+</kw>
+<status status="FAIL" starttime="20221217 12:20:53.772" endtime="20221217 12:21:41.239">Text '//div[@class='sweet-alert']' did not appear in 10 seconds.</status>
+</test>
+<doc>This is a test that create bill with 1 user are header of bills
+and it will cant create.</doc>
+<status status="FAIL" starttime="20221217 12:20:53.449" endtime="20221217 12:21:41.240"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
