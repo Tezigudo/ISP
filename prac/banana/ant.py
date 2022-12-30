@@ -1,0 +1,2 @@
+def ant():
+    return "ant"

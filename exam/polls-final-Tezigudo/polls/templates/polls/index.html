@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% if user.is_authenticated %}
+<p class="small">Hello, {{user.username.title}}.&emsp; <a href="{% url 'logout' %}">Logout</a></p> 
+{% else %}
+<p>Please <a href="{% url 'login' %}">Login</a> to vote.</p>
+{% endif %}
+
+<h2>Available Polls</h2>
+{% endblock %}
+{% block content %}
+{% if question_list %}
+    <table class="table">
+    {% for question in question_list %}
+        <tr>
+        <td>{{ question.question_text }}</td>
+        <td>{% if question.can_vote %} <a href="{% url 'polls:detail' question.id %}">vote</a> 
+            {% else %} voting closed
+            {% endif %}
+        </td>
+        <td><a href="{% url 'polls:results' question.id %}">results</a> </td>
+        </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+{% endblock %}

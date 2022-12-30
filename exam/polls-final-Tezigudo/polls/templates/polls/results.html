@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block header %}
+<h2>{{ question.question_text }}</h2>
+{% endblock %}
+
+{% block content %}
+<p>
+<table border="0" align="left" style="padding:2ex;">
+<tr>
+<th align="left">Choice</th> <th>Votes</th>
+</tr>
+{% for choice in question.choice_set.all|dictsort:"choice_text" %}
+<tr valign="top"><td>{{ choice.choice_text }}</td><td align="center">{{ choice.votes }}</td>
+</tr>
+{% endfor %}
+<tr><td colspan="2">
+<a href="{% url 'polls:index' %}">Back to List of Polls</a>
+</td></tr>
+</table>
+</p>
+{% endblock %}
